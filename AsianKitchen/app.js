@@ -82,9 +82,6 @@ const menu = [
   },
 ];
 const allButton = document.querySelector("#filter-buttons");
-const koreaButton = document.querySelector("#korea");
-const japanButton = document.querySelector("#japan");
-const chinaButton = document.querySelector("#china");
 const content = document.querySelector(".section-center");
 
 EventListeners();
@@ -96,7 +93,6 @@ function EventListeners(){
 function ShowUI(e){
 content.innerHTML = "";
     menu.map(function(item){
-
 
       if(e.target.id === "all"){
         addToUI(item);
@@ -118,9 +114,7 @@ content.innerHTML = "";
         }
       }
       else{
-  
       }
-      
     })
   }
 
@@ -163,11 +157,5 @@ function addToUI(value){
     </div>
   </div>
   `;
-
   content.appendChild(colDiv);
-
-
-
-
-
 }
